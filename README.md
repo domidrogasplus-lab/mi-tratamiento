@@ -49,10 +49,45 @@ cd mitratamiento
 
 2. **Instalar dependencias**
 
+**Opción A: Instalación Automática (Recomendada)**
+
+**Para Windows (Recomendado):**
+
+```bash
+# Opción 1: Instalación e inicio automático
+npm run init
+
+# Opción 2: Solo instalación
+npm run install-windows
+```
+
+**Para macOS/Linux:**
+
+```bash
+# Ejecuta el script de instalación automática
+node install-dependencies.js
+```
+
+**⚠️ IMPORTANTE:**
+
+- NO ejecutes `node App.js` (causará errores)
+- USA `npx expo start` para ejecutar la app
+- Descarga Expo Go en tu teléfono para escanear el QR
+
+**Opción B: Instalación Manual**
+
 ```bash
 npm install
-# o
+# Si encuentras errores de dependencias, prueba:
+npm install --legacy-peer-deps
+# O alternativamente:
 yarn install
+```
+
+**Si persisten problemas con AdMob:**
+
+```bash
+npx expo install --fix
 ```
 
 3. **Configurar variables de entorno**
